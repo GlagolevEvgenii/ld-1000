@@ -236,6 +236,9 @@ main {
     position: relative;
     margin-top: -64px;
 }
+.section-grey.small-mode{
+    padding-top: 75px;
+}
 .section-grey:before{
     background-color:#37474F;
     content: "";
@@ -466,7 +469,9 @@ main {
         left: auto;
         right: 0;
     }
-
+    .section-grey.small-mode{
+        padding-top: 120px;
+    }
 }
 @media (min-width: 768px) {
     .section-image {
@@ -560,6 +565,9 @@ main {
     .section-grey--line{
         top: -130px;
     }
+    .bottom-section.small-mode{
+        padding-top: 60px;
+    }
 
 }
 @media (min-width: 1440px) {
@@ -577,6 +585,9 @@ main {
     }
     .bottom-section {
         padding-top: 40px;
+    }
+    .bottom-section.small-mode{
+        padding-top: 140px;
     }
 
 }
