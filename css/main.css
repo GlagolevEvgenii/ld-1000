@@ -121,9 +121,194 @@ body {
     min-width: 320px;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 .container{
     padding: 0 20px;
+}
+.header{
+    background-image: url("../img/texture-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+}
+.burger-btn{
+    border: none;
+    outline: none;
+}
+
+.logo-wrap{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo{
+    width: 29px;
+    height: 33px;
+}
+.logo img{
+  max-width: 100%;
+}
+.user-info--name{
+    color: #A2A2A2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    display: block;
+}
+.user-info--codes{
+    color: #CF0C2D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.25px;
+}
+.main {
+    background-color: #CDD6DD;
+    overflow: hidden;
+}
+.section-red{
+    background-color:#CF0C2D;
+    transform: skewY(-18deg);
+    padding-top: 4px;
+    padding-bottom: 26px;
+    position: relative;
+}
+.section-red:before{
+    background-color:#CF0C2D;
+    height: 57px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 99%;
+    display: block;
+    content: '';
+}
+.section-image{
+    margin-top:-70px;
+}
+.section-red--title{
+    margin: 0;
+    color: #FFF;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 900;
+    line-height:1;
+    letter-spacing: 2.4px;
+}
+.section-red--title span{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    display:block;
+}
+.section-red--line{
+    height: 3px;
+    width: 407px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 31px;
+    left: 234px;
+}
+.section-image img{
+    width: 100%;
+}
+.section-grey{
+    padding-top: 4px;
+    position: relative;
+    margin-top: -64px;
+}
+.section-grey:before{
+    background-color:#37474F;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transform: skewY(-18deg);
+}
+.section-grey:after{
+    background-color:#CDD6DD;
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transform: skewY(-18deg);
+}
+.section-text{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 19px;
+    padding-top: 50px;
+}
+.section-text-desk{
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.section-text-desk .second{
+    font-size: 30px;
+
+}
+
+.section-text-desk .third{
+    font-size: 23px;
+
+}
+.board{
+    background-color: #FFFFFF;
+    padding: 19px;
+    min-height: 484px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.board:before{
+    content: '';
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-image: url("../img/triangles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -156,14 +341,16 @@ body {
     opacity: 0.8;
 }
 
-
 .footer{
     text-align: center;
+    padding: 20px 20px 27px;
+    background-color: #CDD6DD;
+    flex: 0 0 auto;
 }
 
 .footer img{
     display: flex;
-    max-width: 480px;
+    max-width: 883px;
     width: 100%;
     margin: 0 auto;
 }
@@ -175,4 +362,17 @@ body {
 }
 @media (min-width: 480px) {
 
+}
+@media (min-width: 900px) {
+    .section-text{
+       display: none;
+    }
+    .section-text-desk{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer{
+        padding: 12px 39px 27px;
+    }
 }
