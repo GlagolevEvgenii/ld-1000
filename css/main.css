@@ -24,42 +24,6 @@
 
 @font-face {
     font-family: 'Druk Cyr';
-    src: url('../fonts/DrukCyr-HeavyItalic.eot');
-    src: local('Druk Cyr Heavy Italic'), local('DrukCyr-HeavyItalic'),
-    url('../fonts/DrukCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DrukCyr-HeavyItalic.woff2') format('woff2'),
-    url('../fonts/DrukCyr-HeavyItalic.woff') format('woff'),
-    url('../fonts/DrukCyr-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Druk Cyr';
-    src: url('../fonts/DrukCyr-MediumItalic.eot');
-    src: local('Druk Cyr Medium Italic'), local('DrukCyr-MediumItalic'),
-    url('../fonts/DrukCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DrukCyr-MediumItalic.woff2') format('woff2'),
-    url('../fonts/DrukCyr-MediumItalic.woff') format('woff'),
-    url('../fonts/DrukCyr-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Druk Cyr';
-    src: url('../fonts/DrukCyr-SuperItalic.eot');
-    src: local('Druk Cyr Super Italic'), local('DrukCyr-SuperItalic'),
-    url('../fonts/DrukCyr-SuperItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DrukCyr-SuperItalic.woff2') format('woff2'),
-    url('../fonts/DrukCyr-SuperItalic.woff') format('woff'),
-    url('../fonts/DrukCyr-SuperItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Druk Cyr';
     src: url('../fonts/DrukCyr-Super.eot');
     src: local('Druk Cyr Super'), local('DrukCyr-Super'),
     url('../fonts/DrukCyr-Super.eot?#iefix') format('embedded-opentype'),
@@ -81,21 +45,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Druk Cyr';
-    src: url('../fonts/DrukCyr-BoldItalic.eot');
-    src: local('Druk Cyr Bold Italic'), local('DrukCyr-BoldItalic'),
-    url('../fonts/DrukCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DrukCyr-BoldItalic.woff2') format('woff2'),
-    url('../fonts/DrukCyr-BoldItalic.woff') format('woff'),
-    url('../fonts/DrukCyr-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-
 
 *,::after,::before {
     -webkit-box-sizing: border-box;
@@ -126,17 +75,16 @@ body {
     background-color: #CDD6DD;
 }
 
-main {
-    flex: 1 0 auto;
-}
 .container{
     padding: 0 20px;
 }
+
 .header{
     background-image: url("../img/texture-background.jpg");
     background-size: cover;
     background-position: center;
 }
+
 .header-wrap{
     display: flex;
     justify-content: space-between;
@@ -144,6 +92,7 @@ main {
     width: 100%;
     min-height: 70px;
 }
+
 .burger-btn{
     border: none;
     outline: none;
@@ -154,13 +103,16 @@ main {
     gap: 20px;
     align-items: center;
 }
+
 .logo{
     width: 29px;
     height: 33px;
 }
+
 .logo img{
   max-width: 100%;
 }
+
 .user-info--name{
     color: #A2A2A2;
     font-size: 16px;
@@ -183,6 +135,7 @@ main {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    flex: 1 0 auto;
 }
 .section-red{
     background-color:#CF0C2D;
@@ -393,8 +346,24 @@ main {
 }
 .preview-holder{
     width:280px;
-    height: 300px;
+    height: 400px;
     margin: 0 auto 18px;
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    top:12px;
+    right: 12px;
+    display: none;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.close-btn img{
+    max-width: 100%;
 }
 .preview-holder img {
     width: 100%;
